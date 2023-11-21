@@ -1,0 +1,40 @@
+{
+  /*
+// about use effect
+//const [text, setText] = useState("");
+//const [name, setName] = useState("rohit");
+// variation 1 ->every render
+//useEffect(() =>{
+//  console.log("UI RENDERING DONE");
+//});
+
+// variation 2 -> first render
+//useEffect(() =>{
+// console.log("UI RENDERING ONE");
+//},[]);
+
+//variation 3 -> first render + when dependency changes
+//useEffect(() => {
+// console.log("change observed");
+//}, [name]);
+
+// variation4 -> to handel unmounting of a component
+// useEffect(() => {
+//  console.log("Listner added");
+//return () => {
+// console.log("Listner removed");
+//};
+//}, [text]);
+
+//function changeHandler(event) {
+// console.log(text);
+//setText(event.target.value);
+//}
+
+//return (
+//<div className="App">
+//<input type="text" onChange={changeHandler}></input>
+//</div>
+//);
+*/
+}
