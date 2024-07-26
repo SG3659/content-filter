@@ -35,7 +35,7 @@ const App = () => {
       <div className="bg-bgDark2">
         <div>
           <Filter
-            filterData={filterData}
+            filterData={filterData}/*props through pass data in filter*/
             category={category}
             setCategory={setCategory} /*prop pass */
           />

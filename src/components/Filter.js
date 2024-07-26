@@ -21,9 +21,18 @@ const Filter = (props) => {
             onClick={() => filterHandler(data.title)}
           >
             {data.title}
+            {/*title pass */}
           </button>
         );
       })}
+      <button
+        className="text-lg px-2 py-1 rounded-md font-medium text-white bg-black hover:bg-opacity-50 border-2 transition-all duration-300"
+        onClick={() =>
+          (window.location.href = "https://random-gif-khaki.vercel.app/")
+        }
+      >
+        Gif
+      </button>
     </div>
   );
 };
