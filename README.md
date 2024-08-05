@@ -16,7 +16,11 @@
       try {
         setLoading(true);
         setError(false);
-        const response = await fetch("apiU
+        const response = await fetch("apiUrl",{
+          signal:controller.signal;
+        })
+        const output =await response.json();
+          console.log(output.data);
         setLoading(false);
       } catch (error) {
         // handling the prev garbage url hit
