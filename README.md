@@ -9,28 +9,4 @@
 2. Limited Features: Fetch lacks some of the advanced features that Axios provides, such as automatic transformation of JSON data, request cancellation, and timeout handling.
 3. No Built-in Timeout: Fetch doesn't have a built-in way to handle request timeouts. You need to implement it manually using AbortController.
 
-## AbortController.
-  useEffect(() => {
-    const controller = new AbortController();
-    (async () => {
-      try {
-        setLoading(true);
-        setError(false);
-        const response = await fetch("apiUrl",{
-          signal:controller.signal;
-        })
-        const output =await response.json();
-          console.log(output.data);
-        setLoading(false);
-      } catch (error) {
-        // handling the prev garbage url hit
-        if (axios.isCancel(error)) {
-          console.log("Request canceled", error.message);
-          return;
-        }
-        console.log(error);
-        setError(true);
-        setLoading(false);
-      }
-    })();
-   } 
+
