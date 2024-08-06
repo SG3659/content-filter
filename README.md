@@ -7,6 +7,5 @@
 ## Disadvantages   
 1. Verbose: Fetch can require more boilerplate code, especially for error handling and parsing JSON responses.
 2. Limited Features: Fetch lacks some of the advanced features that Axios provides, such as automatic transformation of JSON data, request cancellation, and timeout handling.
-3. No Built-in Timeout: Fetch doesn't have a built-in way to handle request timeouts. You need to implement it manually using AbortController.
 
 
